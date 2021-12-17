@@ -1,0 +1,9 @@
+.footer{
+    background-color: rgb(66, 66, 252);
+}
+@media only screen and (max-width: 600px) {
+    .footer{
+        background-color: rgb(66, 66, 252);
+        margin-top: 100px;
+    }
+  }
