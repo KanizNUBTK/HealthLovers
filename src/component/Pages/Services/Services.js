@@ -17,7 +17,7 @@ import Footer from '../../Shared/Footer/Footer';
 const Services = () => {
     const[service, setService]= useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/gym')
+        fetch('https://agile-tundra-92856.herokuapp.com/gym')
         .then(res=>res.json())
         .then(data=>{
             // console.log(data);

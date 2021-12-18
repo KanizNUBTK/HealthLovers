@@ -25,7 +25,7 @@ const AddExcerice = () => {
         formData.append('price',price);
         formData.append('description',description);
         formData.append('photoOfEqp',photoOfEqp);
-        fetch('http://localhost:5000/gym', {
+        fetch('https://agile-tundra-92856.herokuapp.com/gym', {
             method: 'POST',
             body: formData
         })

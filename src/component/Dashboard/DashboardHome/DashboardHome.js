@@ -13,7 +13,7 @@ import { Button } from '@mui/material';
 const DashboardHome = () => {
     const[service,setService]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/cart')
+        fetch('https://agile-tundra-92856.herokuapp.com/cart')
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
@@ -31,7 +31,7 @@ const DashboardHome = () => {
             product_image:service[0]?.photoOfEqp,
         }
         //console.log(orders);
-        fetch(`http://localhost:5000/init`,{
+        fetch(`https://agile-tundra-92856.herokuapp.com/init`,{
             method:'POST',
             headers:{
                 "content-type":"application/json"

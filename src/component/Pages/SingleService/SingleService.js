@@ -35,7 +35,7 @@ const SingleService = () => {
     const handleBookingClose = () => {setBookingOpen(false);};
     console.log(gymEqId);
     useEffect(() => {
-        fetch('http://localhost:5000/gym')
+        fetch('https://agile-tundra-92856.herokuapp.com/gym')
           .then((res) => res.json())
           .then((data) => {setGymEq(data)});
       }, [gymEqId]);
@@ -58,7 +58,7 @@ const SingleService = () => {
             productPrice: exactData[0]?.price,
           }
           //send server
-          fetch('http://localhost:5000/cart', {
+          fetch('https://agile-tundra-92856.herokuapp.com/cart', {
               method: 'POST',
               headers: {
                   'content-type': 'application/json'

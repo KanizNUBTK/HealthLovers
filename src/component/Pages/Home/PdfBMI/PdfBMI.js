@@ -10,7 +10,7 @@ const PdfBMI = () => {
     const[dietChart,setDietChart]=useState([]);
   
     useEffect(()=>{
-        fetch('http://localhost:5000/services')
+        fetch('https://agile-tundra-92856.herokuapp.com/services')
         .then(res=>res.json())
         .then(data=>{
             setDietChart(data);

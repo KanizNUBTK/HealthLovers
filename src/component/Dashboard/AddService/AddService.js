@@ -21,7 +21,7 @@ const AddService = () => {
         const formData = new FormData();
         formData.append('dietChatName',dietChatName);
         formData.append('deitPdf',deitPdf);
-        fetch('http://localhost:5000/services', {
+        fetch('https://agile-tundra-92856.herokuapp.com/services', {
             method: 'POST',
             body: formData
         })
